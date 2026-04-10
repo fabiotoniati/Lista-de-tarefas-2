@@ -38,13 +38,12 @@ function Header({ activeTab, setActiveTab, session }) {
 
       <div className="header-actions">
         <span className="user-email-display">{userEmail}</span>
-        <button onClick={handleLogout} className="btn-logout" title="Sair">Sair 🚪</button>
-        {/* <button className="btn-icon" aria-label="Configurações">⚙️</button> */}
         <div className="avatar-wrapper">
           <div className="avatar-initials">
             {initials}
           </div>
         </div>
+        <button onClick={handleLogout} className="btn-logout" title="Sair">Sair 🚪</button>
       </div>
     </header>
   )
